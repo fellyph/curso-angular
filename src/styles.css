@@ -15,13 +15,31 @@ body {
   background: rgb(232, 181, 41);
   color: white;
   padding: 0.5em;
-  border: 3px solid rgb(232, 181, 41);
+  border: 2px solid rgb(232, 181, 41);
   border-radius: 5px;
   display: inline-block;
 }
 
 a.btn {
   text-decoration: none;
+}
+
+.btn-like::before {
+  content: '';
+  background-image: url('./assets/img/heart.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px
+}
+
+.btn-like:hover {
+  background: white;
+  color:  rgb(232, 181, 41);
 }
 
 /* header */
