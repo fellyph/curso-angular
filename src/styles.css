@@ -3,12 +3,15 @@
 /* common */
 
 body {
+  margin: 0;
+  padding: 0;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .btn {
@@ -48,6 +51,7 @@ a.btn {
   background: #F9C948;
   margin-bottom: 2em;
   padding-bottom: 1em;
+  box-shadow: 0 3px 5px #AAA;
 }
 
 .navbar .title {
@@ -75,7 +79,7 @@ a.btn {
 }
   
 .course .card {
-  box-shadow: 2px 2px 10px #DDDDDD;
+  box-shadow: 2px 2px 10px #AAA;
 }
 
 .card .card-block {
@@ -86,7 +90,7 @@ a.btn {
 .card-date {
   background: white;
   border-radius: 100%;
-  box-shadow: 2px 2px 10px #DDDDDD;
+  box-shadow: 2px 2px 10px #AAA;
   color: #DF2E2D;
   display: inline-block;
   font-weight: 500;
