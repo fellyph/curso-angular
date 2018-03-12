@@ -6,8 +6,25 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* header */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
+.btn {
+  background: rgb(232, 181, 41);
+  color: white;
+  padding: 0.5em;
+  border: 3px solid rgb(232, 181, 41);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+/* header */
 .navbar {
   text-align: center;
   background: #F9C948;
@@ -18,6 +35,8 @@ body {
 .navbar .title {
   color: white;
   margin: 0.5em 0;
+  font-size: 2em;
+  text-transform: uppercase;
 }
   
 .logo {
@@ -26,9 +45,15 @@ body {
 }
 
 /* course */
-    
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
 .course {
-  margin: 1em 0.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
 }
   
 .course .card {
@@ -36,9 +61,10 @@ body {
 }
 
 .card .card-block {
-  padding: 0.5em;
+  padding: 0.8em;
 }
 
+/* footer */ 
 .footerbar {
   background: #F9C948;
   color: white;
@@ -50,4 +76,18 @@ body {
 .card .responsive-img {
   height: auto;
   max-width: 100%;
+}
+
+/*Medium devices (tablets, less than 992px) */
+@media (min-width: 576px) {
+  .course {
+    width: calc(50% - 20px);
+  }
+}
+
+/*Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) {
+  .course {
+    width: calc(33% - 20px);
+  }
 }
