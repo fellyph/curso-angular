@@ -2,11 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-test',
-    template: `<div class="course">
-                <h1>Nome do curso: {{nomeCurso}}</h1>
-                <h2>Quantidade de vagas: {{vagas}} </h2>
-                <button class="btn" (click)="matricularAluno()">Matricular</button>
-            </div>`
+    template: ` <article class="course presencial">
+                    <div class="card">
+                        <div class="card-block">
+                          <h1>Nome do curso: {{nomeCurso}}</h1>
+                          <h2>Quantidade de vagas: {{vagas}} </h2>
+                          <button class="btn" (click)="matricularAluno()">Matricular</button>
+                        </div>
+                    </div>
+                </article>`
 })
 
 export class TestComponent {
