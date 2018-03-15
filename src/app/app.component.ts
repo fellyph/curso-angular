@@ -3,14 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-curso></app-curso>
-    <app-curso></app-curso>
-    <app-curso></app-curso>
-    `,
+  <div class="container">
+    <div class="course-list">
+      <app-curso></app-curso>
+      <app-curso></app-curso>
+      <app-curso></app-curso>
+    </div>
+  </div>`,
 })
 
-export class AppComponent {
-  constructor() {
-
-  }
-}
+export class AppComponent { }
