@@ -26,8 +26,4 @@ export class CursoComponent {
             console.log(this.alunos);
         }
     }
-
-    lerNomeAluno (event: Event) {
-      this.alunoAtual = event.target.value;
-    }
 }
