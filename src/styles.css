@@ -23,6 +23,11 @@ body {
   display: inline-block;
 }
 
+.btn:disabled {
+  background: grey;
+  border-color: grey;
+}
+
 a.btn {
   text-decoration: none;
 }

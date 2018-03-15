@@ -16,7 +16,11 @@
         </ul>
         <label>Nome:</label>
         <input type="text" [(ngModel)]="alunoAtual" name="nome"/>
-        <button class="btn" (click)="matricularAluno()">Matricular</button>
+        <button class="btn" (click)="matricularAluno()" [disabled]="!alunoAtual">Matricular</button>
+
+        <ul>
+          <li *ngFor="let aluno of alunos">{{aluno}}</li>
+        </ul>
       </div>
   </div>
 </article>

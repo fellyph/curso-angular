@@ -23,7 +23,7 @@ export class CursoComponent {
         if (this.vagas > 0) {
             this.vagas--;
             this.alunos.push(this.alunoAtual);
-            console.log(this.alunos);
+            this.alunoAtual = '';
         }
     }
 }
