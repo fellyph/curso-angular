@@ -10,6 +10,8 @@ export class CursoComponent {
     nomeCurso: string;
     vagas: number;
     requisitos: Array<string>;
+    alunos = [];
+    alunoAtual = '';
 
     constructor() {
         this.nomeCurso = 'Angular';
@@ -20,6 +22,12 @@ export class CursoComponent {
     matricularAluno() {
         if (this.vagas > 0) {
             this.vagas--;
+            this.alunos.push(this.alunoAtual);
+            console.log(this.alunos);
         }
+    }
+
+    lerNomeAluno (event: Event) {
+      this.alunoAtual = event.target.value;
     }
 }
