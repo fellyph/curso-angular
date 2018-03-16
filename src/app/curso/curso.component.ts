@@ -15,7 +15,7 @@ export class CursoComponent {
 
     constructor() {
         this.nomeCurso = 'Angular';
-        this.vagas = 10;
+        this.vagas = 3;
         this.requisitos = ['HTML', 'CSS', 'JavaScript', 'TypeScript'];
     }
 
