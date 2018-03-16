@@ -1,4 +1,4 @@
-<article class="course presencial" [ngClass]="{'sold-out':!vagas}" >
+<article class="course presencial" [class.sold-out]="!vagas" >
   <div class="card">
       <div class="card-block">
         <h1>Nome do curso: {{nomeCurso}}</h1>
@@ -14,6 +14,7 @@
         <ul class="requirements">
           <li *ngFor="let requisito of requisitos">{{requisito}}</li>
         </ul>
+
         <ng-container *ngIf="vagas">
           <label>Nome:</label>
           <input type="text" [(ngModel)]="alunoAtual" name="nome"/>

@@ -23,6 +23,10 @@
   padding: 1em;
 }
 
+.course.last-chance .card {
+  background: rgb(241, 228, 163);
+}
+
 .course .card {
   box-shadow: 2px 2px 10px #AAA;
 }
