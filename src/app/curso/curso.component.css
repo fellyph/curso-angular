@@ -2,10 +2,25 @@
   color: tomato;
 }
 
-
 .course {
   margin-bottom: 1.5em;
   width: 100%;
+  position: relative;
+}
+
+.course.sold-out .card {
+  border: 2px solid tomato;
+  opacity: 0.4;
+}
+
+.course.sold-out::after {
+  content: "Vagas Encerradas";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: tomato;
+  color: #fff;
+  padding: 1em;
 }
 
 .course .card {
