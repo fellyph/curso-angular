@@ -3,7 +3,7 @@
       <div class="card-block">
         <h1>Nome do curso: {{nomeCurso}}</h1>
         <p class="spots">Quantidade de vagas: {{vagas}}</p>
-        <p [ngSwitch]="vagas">
+        <p [ngSwitch]="vagas" [style.font-size]="getFontSize()">
           <span *ngSwitchCase="3" class="alert">Últimas vagas</span>
           <span *ngSwitchCase="2" class="alert">Últimas vagas</span>
           <span *ngSwitchCase="1" class="alert">Apenas uma vaga!</span>

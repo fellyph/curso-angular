@@ -19,6 +19,10 @@ export class CursoComponent {
         this.requisitos = ['HTML', 'CSS', 'JavaScript', 'TypeScript'];
     }
 
+    getFontSize() {
+      return `${(this.alunos.length * 0.7)}em`;
+    }
+
     matricularAluno() {
         if (this.vagas > 0) {
             this.vagas--;
