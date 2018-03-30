@@ -8,10 +8,10 @@ import { Curso } from './curso';
 })
 export class CursosComponent implements OnInit {
   public dadosCurso = [
-    new Curso('JavaScript', 'Desenvolvimento', 20, '', '30 Abr'),
-    new Curso('TypeScript', 'Desenvolvimento', 20, '', '30 Abr'),
-    new Curso('Angular', 'Desenvolvimento', 20, '', '30 Abr'),
-    new Curso('React.js', 'Desenvolvimento', 20, '', '30 Abr')
+    new Curso('JavaScript', 'Desenvolvimento', 20, 'assets/img/javascript.jpg', '30 Abr'),
+    new Curso('TypeScript', 'Desenvolvimento', 40, 'assets/img/typescript.jpg', '30 Abr'),
+    new Curso('Angular', 'Desenvolvimento', 60, 'assets/img/javascript.jpg', '30 Abr'),
+    new Curso('React.js', 'Desenvolvimento', 20, 'assets/img/typescript.jpg', '30 Abr')
   ];
   constructor() { }
 
