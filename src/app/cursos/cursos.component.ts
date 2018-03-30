@@ -7,13 +7,12 @@ import { Curso } from './curso';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
-  public cursosData = [
-      new Curso('JavaScript', 'Desenvolvimento', 30, '#', '27 Abr'),
-      new Curso('TypeScript', 'Desenvolvimento', 30, '#', '10 Abr'),
-      new Curso('Angular', 'Desenvolvimento', 50, '#', '30 Ago'),
-      new Curso('React.js', 'Desenvolvimento', 60, '#', '10 Out'),
-    ];
-
+  public dadosCurso = [
+    new Curso('JavaScript', 'Desenvolvimento', 20, '', '30 Abr'),
+    new Curso('TypeScript', 'Desenvolvimento', 20, '', '30 Abr'),
+    new Curso('Angular', 'Desenvolvimento', 20, '', '30 Abr'),
+    new Curso('React.js', 'Desenvolvimento', 20, '', '30 Abr')
+  ];
   constructor() { }
 
   ngOnInit() {
