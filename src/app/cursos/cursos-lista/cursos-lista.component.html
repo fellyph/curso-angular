@@ -1,5 +1,8 @@
-<div class="course-list">
+<div>
+  <h3>Próximos Cursos</h3>
   <app-cursos-item
-    *ngFor="let curso of cursos"
-    [curso]="curso"></app-cursos-item>
+        *ngFor="let itemCurso of cursos"
+        [curso]="itemCurso" (favoritou)="itemFavoritado($event)">
+  Descricao do curso
+  </app-cursos-item>
 </div>

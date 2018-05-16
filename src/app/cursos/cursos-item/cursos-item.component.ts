@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Curso } from '../curso';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import {Curso} from '../curso';
 
 @Component({
   selector: 'app-cursos-item',
@@ -7,11 +7,24 @@ import { Curso } from '../curso';
   styleUrls: ['./cursos-item.component.css']
 })
 export class CursosItemComponent implements OnInit {
-  @Input() public curso: Curso;
-
+  public counter = 0;
+  @Input() curso: Curso;
+  @Output() favoritou = new EventEmitter<Curso>();
   constructor() { }
 
   ngOnInit() {
+    console.log('init')
   }
 
+  ngAfterContentInit() {
+    console.log('content init');
+  }
+
+  favoritar() {
+    this.favoritou.emit(this.curso);
+  }
+
+  curtir() {
+    this.counter++;
+  }
 }

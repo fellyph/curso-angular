@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import {Curso} from '../curso';
 
 @Component({
   selector: 'app-cursos-lista',
@@ -13,4 +14,7 @@ export class CursosListaComponent implements OnInit {
   ngOnInit() {
   }
 
+  itemFavoritado(event: Curso) {
+    alert(event.nome);
+  }
 }
