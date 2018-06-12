@@ -12,7 +12,6 @@ import { CursosItemComponent } from './cursos/cursos-item/cursos-item.component'
     BrowserModule,
     FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

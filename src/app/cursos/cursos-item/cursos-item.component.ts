@@ -13,11 +13,6 @@ export class CursosItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('init')
-  }
-
-  ngAfterContentInit() {
-    console.log('content init');
   }
 
   favoritar() {

@@ -8,6 +8,7 @@ import {Curso} from '../curso';
 })
 export class CursosListaComponent implements OnInit {
   @Input() public cursos = [];
+  public totalLikes: number;
 
   constructor() { }
 
