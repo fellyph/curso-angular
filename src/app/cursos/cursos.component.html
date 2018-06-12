@@ -1,4 +1,5 @@
-<section class="container" id='app'>
-  <h2>Próximos Cursos</h2>
-  <app-cursos-lista [cursos]="dadosCurso"></app-cursos-lista>
+<section class="container" id="app">
+  <h4>Total likes: {{totalLikes}}</h4>
+  <app-cursos-lista [cursos]="dadosCurso" [tituloLista]="tituloProx"></app-cursos-lista>
+  <app-cursos-lista [cursos]="dadosFavoritos" [tituloLista]="tituloFav"></app-cursos-lista>
 </section>

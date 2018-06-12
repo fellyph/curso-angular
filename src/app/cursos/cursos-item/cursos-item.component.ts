@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Curso} from '../curso';
+import { CursosService } from '../../services/cursos.service';
 
 @Component({
   selector: 'app-cursos-item',
@@ -9,17 +10,18 @@ import {Curso} from '../curso';
 export class CursosItemComponent implements OnInit {
   public counter = 0;
   @Input() curso: Curso;
-  @Output() favoritou = new EventEmitter<Curso>();
-  constructor() { }
+
+  constructor(private cursoService: CursosService) { }
 
   ngOnInit() {
   }
 
   favoritar() {
-    this.favoritou.emit(this.curso);
+   this.cursoService.favoritarCurso.emit(this.curso);
   }
 
   curtir() {
     this.counter++;
+    this.cursoService.cursoCurtido.emit(this.curso);
   }
 }
