@@ -12,6 +12,7 @@ import { NavigationComponent } from './main/navigation/navigation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, CursosComponent,
@@ -21,7 +22,8 @@ import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.comp
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
