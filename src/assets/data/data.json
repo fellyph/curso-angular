@@ -1,0 +1,6 @@
+[
+  {"id": 1, "curso": "JavaScript",  "categoria": "Desenvolvimento", "carga": 20, "thumb":  "assets/img/typescript.jpg", "dia": "30 Abr"},
+  {"id": 2, "curso": "TypeScript",  "categoria": "Desenvolvimento", "carga": 40, "thumb":  "assets/img/typescript.jpg", "dia": "20 Abr"},
+  {"id": 3, "curso": "Angular", "categoria": "Desenvolvimento", "carga": 60, "thumb":  "assets/img/javascript.jpg", "dia": "10 Abr"},
+  {"id": 4, "curso": "React.js",  "categoria": "Desenvolvimento", "carga": 20, "thumb":  "assets/img/typescript.jpg", "dia": "02 Abr"}
+]

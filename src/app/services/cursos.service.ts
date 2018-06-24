@@ -9,10 +9,10 @@ export class CursosService {
   public favoritarCurso = new EventEmitter<Curso>();
 
   private cursos = [
-    new Curso(1, 'JavaScript', 'Desenvolvimento', 20, 'assets/img/typescript.jpg', '30 Abr'),
-    new Curso(2, 'TypeScript', 'Desenvolvimento', 40, 'assets/img/typescript.jpg', '20 Abr'),
-    new Curso(3, 'Angular', 'Desenvolvimento', 60, 'assets/img/javascript.jpg', '10 Abr'),
-    new Curso(4, 'React.js', 'Desenvolvimento', 20, 'assets/img/typescript.jpg', '02 Abr')
+    new Curso(1, 'JavaScript', 'Desenvolvimento', 20, "assets/img/typescript.jpg', '30 Abr'),
+    new Curso(2, 'TypeScript', 'Desenvolvimento', 40, "assets/img/typescript.jpg', '20 Abr'),
+    new Curso(3, 'Angular', 'Desenvolvimento', 60, "assets/img/javascript.jpg', '10 Abr'),
+    new Curso(4, 'React.js', 'Desenvolvimento', 20, "assets/img/typescript.jpg', '02 Abr')
   ];
   constructor() { }
 
