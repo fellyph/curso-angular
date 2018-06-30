@@ -20,7 +20,11 @@ export class CursosComponent implements OnInit {
   constructor(private cursosService: CursosService, private favoritosService: FavoritosService) { }
 
   ngOnInit() {
-    this.dadosCurso = this.cursosService.getCursos();
+   this.cursosService.getCursos()
+      .subscribe( cursos => {
+        this.dadosCurso = cursos;
+        console.log(cursos);
+      });
     this.cursosService.cursoCurtido.subscribe((curso: Curso) => { this.totalLikes++; });
     this.cursosService.favoritarCurso.subscribe((curso: Curso) => {
       this.favoritosService.add(curso);

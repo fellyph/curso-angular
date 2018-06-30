@@ -1,7 +1,9 @@
 <div>
   <h3>{{tituloLista}}</h3>
-  <app-cursos-item
-        *ngFor="let itemCurso of cursos"
-        [curso]="itemCurso">
-  </app-cursos-item>
+  <div class="curso-lista">
+    <app-cursos-item
+          *ngFor="let itemCurso of cursos"
+          [curso]="itemCurso">
+    </app-cursos-item>
+  </div>
 </div>
