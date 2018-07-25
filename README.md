@@ -1,6 +1,9 @@
 # CursoAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+Material do curso de Angular Essential do iMedia cursos. O curso é desenvolvido na versao 6.0 do Angular. O projeto final está disponível para consulta, mas os videos do curso voce terá acesso no portal do iMedia: www.imediabrasil.com.br 
+
+Este projeto foi gerado com  [Angular CLI](https://github.com/angular/angular-cli) version 6.0.
+
 
 ## Development server
 
